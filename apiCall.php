@@ -1,7 +1,9 @@
 <?php
 
 try {
+    #API URL
     $url = "https://shrtlnk.dev/api/v2/link";
+    #URL To Short
     $url_toShort = "https://www.youtube.com/watch?v=C-R1qFGFvc0&ab_channel=MalikCodex";
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL, $url);
@@ -15,6 +17,7 @@ try {
         )
     ));
     curl_setopt($ch, CURLOPT_HTTPHEADER, array(
+        #API Key For URL API
         "api-key: DcadHPnk4YAzlvnU3urxj5IZLpoJMFkr8FXHeMk8Pw3KN",
         "Accept: application/json",
         "Content-Type: application/json"
